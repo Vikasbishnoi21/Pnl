@@ -574,7 +574,7 @@ async function loadFromSheet(){
   // Some deployments always respond with callback(...) regardless of the requested callback name,
   // so we register BOTH the requested callback and a default "callback" handler.
   const cbName = "__pocketPnlCb_" + Date.now();
-  const timeoutMs = 15000;
+  const timeoutMs = 150000;
 
   return await new Promise((resolve, reject) => {
     let done=false;
